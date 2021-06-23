@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <main>
+            <form id='form'>
+                <div id='name-fields'>
+                    <div id='name-header'><b>Name</b>&nbsp;<span class='asterisk'>&#42;</span></div>
+                    <input id='first-name-input' type='text'>
+                    <input id='last-name-input' type='text'>
+                    <div id='first-name-text'>First</div>
+                    <div id='last-name-text'>Last</div>
+                </div>
+                <div id='email-fields'>
+                    <div id='email-header'><b>Email&nbsp;<span class='asterisk'>&#42;</span></b></div>
+                    <input id='email-input' type='text'>
+                </div>
+                <div id='exp-fields'>
+                    <div id='experience-header'><b>Your Experience&nbsp;<span class='asterisk'>&#42;</span></b></div>
+                    <div id='experience-input'>
+                        <span class="fa fa-star checked orange-color"></span>
+                        <span class="fa fa-star checked orange-color"></span>
+                        <span class="fa fa-star checked orange-color"></span>
+                        <span class="fa fa-star checked orange-color"></span>
+                        <span class="fa fa-star checked orange-color"></span>
+                    </div>
+                </div>
+                <div id='satis-fields'>
+                    <div id='satis-header'><b>How Satisfied are you with&nbsp;<span class='asterisk'>&#42;</span></b></div>
+                    <table id='satis-table'>
+                        <thead>
+                            <tr id='satis-table-headers'>
+                                <th></th>
+                                <th>Very Unsatisfied</th>
+                                <th>Unsatisfied</th>
+                                <th>Neutral</th>
+                                <th>Satisfied</th>
+                                <th>Very Satisfied</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id='satis-table-purchase'>
+                                <th>Purchase</th>
+                                <td><input type='radio' name='satis-table-purchase-input'></td>
+                                <td><input type='radio' name='satis-table-purchase-input'></td>
+                                <td><input type='radio' name='satis-table-purchase-input'></td>
+                                <td><input type='radio' name='satis-table-purchase-input'></td>
+                                <td><input type='radio' name='satis-table-purchase-input'></td>
+                            </tr>
+                            <tr id='satis-table-service'>
+                                <th>Service</th>
+                                <td><input type='radio' name='satis-table-service-input'></td>
+                                <td><input type='radio' name='satis-table-service-input'></td>
+                                <td><input type='radio' name='satis-table-service-input'></td>
+                                <td><input type='radio' name='satis-table-service-input'></td>
+                                <td><input type='radio' name='satis-table-service-input'></td>
+                            </tr>
+                            <tr id='satis-table-overall'>
+                                <th>Company Overall</th>
+                                <td><input type='radio' name='satis-table-overall-input'></td>
+                                <td><input type='radio' name='satis-table-overall-input'></td>
+                                <td><input type='radio' name='satis-table-overall-input'></td>
+                                <td><input type='radio' name='satis-table-overall-input'></td>
+                                <td><input type='radio' name='satis-table-overall-input'></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id='marketing-field'>
+                    <div id='marketing-field-header'><b>How likely are you to&nbsp;<span class='asterisk'>&#42;</span></b></div>
+                    <table id='marketing-field-table'>
+                        <thead>
+                            <tr id='marketing-field-table-headers'>
+                                <th></th>
+                                <th>Very Unsatisfied</th>
+                                <th>Unsatisfied</th>
+                                <th>Neutral</th>
+                                <th>Satisfied</th>
+                                <th>Very Satisfied</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id='marketing-field-table-buy-again'>
+                                <th>Buy from us again</th>
+                                <td><input type='radio' name='marketing-field-table-buy-again-input'></td>
+                                <td><input type='radio' name='marketing-field-table-buy-again-input'></td>
+                                <td><input type='radio' name='marketing-field-table-buy-again-input'></td>
+                                <td><input type='radio' name='marketing-field-table-buy-again-input'></td>
+                                <td><input type='radio' name='marketing-field-table-buy-again-input'></td>
+                            </tr>
+                            <tr id='marketing-field-table-recommend-product'>
+                                <th>Recommend our product to others</th>
+                                <td><input type='radio' name='marketing-field-table-recommend-product'></td>
+                                <td><input type='radio' name='marketing-field-table-recommend-product'></td>
+                                <td><input type='radio' name='marketing-field-table-recommend-product'></td>
+                                <td><input type='radio' name='marketing-field-table-recommend-product'></td>
+                                <td><input type='radio' name='marketing-field-table-recommend-product'></td>
+                            </tr>
+                            <tr id='marketing-field-table-recommend-company'>
+                                <th>Recommend our company to others</th>
+                                <td><input type='radio' name='marketing-field-table-recommend-company-input'></td>
+                                <td><input type='radio' name='marketing-field-table-recommend-company-input'></td>
+                                <td><input type='radio' name='marketing-field-table-recommend-company-input'></td>
+                                <td><input type='radio' name='marketing-field-table-recommend-company-input'></td>
+                                <td><input type='radio' name='marketing-field-table-recommend-company-input'></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id='comment-field'>
+                    <div id='comment-field-header'><b>Additional comments and suggestions</b></div>
+                    <input id='comment-field-input' type='text'>
+                </div>
+                <div id='submit-button-div'>
+                    <button type='button' id='submit-button'>Submit</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

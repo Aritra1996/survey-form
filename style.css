@@ -1,0 +1,173 @@
+#form {
+    display: grid;
+    grid-template-rows: 9fr 6fr 9fr 16fr 16fr 12fr 4fr;
+    row-gap: 10px;
+}
+
+#name-fields {
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#name-header {
+    grid-area: 1/ 1/ span 1/ span 1;
+    font-size: 2em;
+}
+
+#first-name-input {
+    grid-area: 2/ 1/ span 1/ span 1;
+}
+
+#last-name-input {
+    grid-area: 2/ 2/ span 1/ span 1;
+}
+
+#first-name-text {
+    grid-area: 3/ 1/ span 1/ span 1;
+}
+
+#last-name-text {
+    grid-area: 3/ 2/ span 1/ span 1;
+}
+
+#email-fields {
+    /* background-color: rgb(214, 161, 91); */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+#email-header {
+    grid-area: 1/ 1/ span 1/ span 1;
+    font-size: 2em;
+}
+
+#email-input {
+    grid-area: 2/ 1/ span 2/ span 1;
+}
+
+#exp-fields {
+    /* background-color: rgb(69, 31, 129); */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+#experience-header {
+    grid-area: 1/ 1/ span 1/ span 1;
+    font-size: 2em;
+}
+
+#experience-input {
+    grid-area: 2/ 1/ span 2/ span 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 20fr;
+}
+
+#satis-fields {
+    /* background-color: rgb(69, 158, 84); */
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr;
+    justify-content: flex-start;
+}
+
+#satis-header {
+    grid-area: 1/ 1/ span 1/ span 1;
+    font-size: 2em;
+}
+
+#satis-table {
+    /* background-color: rgb(61, 38, 146); */
+    border-spacing: 0px;
+}
+
+#satis-table-purchase {
+    background-color: rgb(174, 182, 174);
+}
+
+#satis-table-overall {
+    background-color: rgb(174, 182, 174);
+}
+
+
+th {
+    text-align: center;
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+}
+
+#marketing-field {
+    /* background-color: rgb(182, 219, 46); */
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr;
+    justify-content: flex-start;
+}
+
+#marketing-field-header {
+    grid-area: 1/ 1/ span 1/ span 1;
+    font-size: 2em;
+}
+
+#marketing-field-table {
+    /* background-color: rgb(61, 38, 146); */
+    border-spacing: 0px;
+}
+
+#marketing-field-table-buy-again {
+    background-color: rgb(174, 182, 174);
+}
+
+#marketing-field-table-recommend-company {
+    background-color: rgb(174, 182, 174);
+}
+
+#comment-field {
+    /* background-color: rgb(54, 151, 196); */
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+    justify-content: flex-start;
+}
+
+#comment-field-header {
+    grid-area: 1/ 1/ span 1/ span 1;
+    font-size: 2em;
+}
+
+#comment-field-input {
+    grid-area: 2/ 1/ span 1/ span 1;
+}
+
+#submit-button-div {
+    /* background-color: rgb(150, 46, 51); */
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 9fr;
+    justify-content: flex-start;
+} 
+
+#submit-button {
+    background-color: rgb(150, 144, 144);
+}
+
+.asterisk {
+    color: red;
+}
+
+.orange-color {
+    color: orange;
+}
+
+.black-color {
+    color: black;
+    font-size: 2em;
+}
